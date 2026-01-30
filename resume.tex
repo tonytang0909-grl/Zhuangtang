@@ -1,0 +1,232 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Zhuang (Tony) Tang} \\ \vspace{1pt}
+    \small +61 466822796 $|$ \href{mailto:tonytang1199@gmail.com}{\underline{tonytang1199@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/zhuangtang}{\underline{linkedin.com/in/zhuangtang}} $|$
+    \href{https://github.com/tonytang0909-grl}{\underline{github.com/tonytang0909-grl}}
+    \href{https://tonytang0909-grl.github.io/Zhuangtang/}{\underline{https://tonytang0909-grl.github.io/Zhuangtang/}}
+\end{center}
+%-----------SUMMARY-----------
+\section{SUMMARY}
+Senior Backend \& Cloud Engineer with 10+ years of professional software engineering experience building distributed, cloud-native systems. Strong background in backend system design, event-driven architectures, and large-scale AWS integrations. Proven ability to lead complex technical initiatives, design reliable and observable services, and unblock teams through developer tooling and platform engineering. Experienced in CI/CD automation, enterprise systems, and applied machine learning, with growing exposure to AI/LLM-assisted development.
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+    \textbf{Languages:} Java (primary), TypeScript(advanced), PHP(advanced), SQL; Python, JavaScript, C/C++ \\
+    \textbf{Backend \& APIs:} Spring Boot, FastAPI, Flask, Node.js, REST, GraphQL, Webhooks \\
+    \textbf{Cloud \& Distributed Systems:} AWS (Lambda, API Gateway, SQS, SNS, Step Functions), Event-driven systems, AWS CDK , Serverless\\
+    \textbf{DevOps \& Reliability:} Docker, CI/CD (GitHub Actions, Jenkins, Bitbucket Pipelines), Monitoring \& Logging \\
+    \textbf{Databases:} MySQL, PostgreSQL, MongoDB
+  }}
+\end{itemize}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {The University of Adelaide}{Adelaide, South Australia}
+      {Master of Computing and Innovation}{July. 2022 -- June 2024}
+    \resumeSubheading
+      {University College Dublin}{Dublin, Ireland}
+      {Master of Computer Science}{July. 2012 -- Dec 2013}
+    \resumeSubheading
+      {Minzu University of China}{Beijing, China}
+      {Bachelor of Electronic Engineer}{Sep. 2008 -- June 2012}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Senior Software Developer}{Sep 2024 -- Present}
+{Aligent Consulting Pty Ltd}{Adelaide, Australia}
+\resumeItemListStart
+  \resumeItem{Led and owned major Adobe Commerce (Magento 2) platform upgrades, including dependency alignment, extension compatibility analysis, migration planning, and production rollout.}
+  \resumeItem{Designed and delivered highly customized enterprise e-commerce solutions integrating payments, logistics, ERP, CRM, and marketing platforms.}
+  \resumeItem{Acted as technical lead for complex backend initiatives, owning system design, architectural decisions, and production readiness.}
+  \resumeItem{Built distributed, event-driven cloud integrations using AWS Lambda, SQS, SNS, Step Functions, and AWS CDK.}
+  \resumeItem{Defined integration standards, canonical schemas, and service contracts to reduce coupling and improve long-term maintainability.}
+  \resumeItem{Led code reviews, mentored backend engineers, and drove improvements in developer productivity, reliability, and observability.}
+\resumeItemListEnd
+
+
+    \resumeSubheading
+{Software Engineer}{Jan 2018 -- Apr 2022}
+{AVIC Airport Runway Engineering Technology Co., Ltd}{Beijing, China}
+\resumeItemListStart
+  \resumeItem{Developed backend services using Spring Boot and relational databases to support internal and customer-facing platforms.}
+  \resumeItem{Designed and implemented REST and GraphQL APIs to improve data access patterns and reduce over-fetching.}
+  \resumeItem{Containerised services using Docker to ensure consistent deployment across environments.}
+  \resumeItem{Built and maintained CI/CD pipelines with Jenkins and Docker, significantly reducing deployment time and manual errors.}
+  \resumeItem{Collaborated with DevOps and product teams on system design, code reviews, and production support.}
+\resumeItemListEnd
+
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+{Software Engineer / IT Systems Support}{Apr 2014 -- Jan 2018}
+{Sino Engineering Pty Ltd}{China}
+\resumeItemListStart
+  \resumeItem{Maintained backend systems, servers, and internal applications supporting business operations.}
+  \resumeItem{Designed and supported networked systems with a focus on reliability, security, and performance.}
+  \resumeItem{Diagnosed and resolved system, network, and application issues across development and production environments.}
+  \resumeItem{Authored technical documentation for system configurations and operational procedures.}
+\resumeItemListEnd
+
+
+
+  \resumeSubHeadingListEnd
+
+
+%-----------Impacts-----------
+\section{Key Impacts \& Strategic Initiatives}
+\resumeItemListStart
+  \resumeItem{Resolved a long-standing 4+ year local PWA debugging blocker by designing and delivering a Chrome-based debugging extension, unblocking frontend, backend, and DevOps teams and restoring local development capability.}
+  \resumeItem{Designed and built a local AWS event capture and replay framework enabling Java-style step-through debugging for serverless workflows, eliminating risky live debugging and dramatically improving developer feedback loops.}
+  \resumeItem{Led the redesign of the company’s integration platform, replacing tightly coupled Serverless/CDK monorepo workflows with a canonical schema–driven, composable pipeline architecture using adapters and customizable processing slots.}
+  \resumeItem{Established integration standards and service contracts that significantly reduced coupling, improved extensibility, and accelerated onboarding of new enterprise integrations.}
+  \resumeItem{Built a production-grade Adobe App Builder application replicating core Shopify Flow capabilities, positioning the company strategically as Adobe Commerce transitions away from traditional Magento extensibility.}
+  \resumeItem{Designed and delivered a fully functional, commercialized BigCommerce application using Gadget.dev, providing Shopify-equivalent automation and workflow capabilities and opening a new revenue stream.}
+\resumeItemListEnd
+
+
+
+
+%-----------AWARDS-----------
+\section{AWARDS}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+            {\textbf{30\% Global Citizens Scholarship} $|$ \emph{The University of Adelaide}}{2023}
+        \resumeProjectHeading
+            {\textbf{15\% Global Citizens Scholarship} $|$ \emph{The University of Adelaide}}{2022}
+    \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
